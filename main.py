@@ -2,14 +2,14 @@
 import sys
 from ui import View
 from ctrl import Control
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QApplication        
 
 def main():
     calc = QApplication(sys.argv)
-    app = QApplication(sys.argv)
-    view = View()
+    app=QApplication(sys.argv)
+    view=View()
     Control(view=view)
     sys.exit(app.exec_())
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
